@@ -28,3 +28,55 @@
     text-decoration: none;
     font-size: 11px;
 }
+.images-gen{
+    display: flex;
+}
+.one-three, .two-four{
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 5px;
+}
+.welcome-img{
+    position: absolute;
+    transition: .5s;
+    left: -999999px;
+    right: -999999px;
+    top: -999999px;
+    bottom: -999999px;
+    transform: scale(1);
+    margin: auto;
+}
+.image-four::after{
+    content: '';
+    position: absolute;
+    background: #1A153A;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    /* right: 0;
+    bottom: 0; */
+    opacity: .8;
+}
+.welcome-img4{
+    transition: .5s;
+}
+.image:hover .welcome-img{
+    transform: scale(1.1);
+}
+.image:hover .welcome-img4{
+    transform: scale(1.1);
+}
+.image-four{
+    opacity: 1;
+}
+
+.text-content{
+    position: absolute;
+}
