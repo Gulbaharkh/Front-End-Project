@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jirono - FAQ’s</title>
     <link rel="icon" type="image/png" href="assets/images/favicon/favicon.png">
     <link rel="icon" href="/Front/img/favicon.png" type="image/gif" />
     <link rel="apple-touch-icon" sizes="57x57" href="/Front/img/favicon/apple-icon-57x57.png">
@@ -32,12 +32,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 <body>
+    <div id="preloader">
+		<div id="loader" class="spinner">
+			<div id="shadow"></div>
+			<div id="box"></div>
+		</div>
+	</div>
     <nav class="navbar navbar-expand-lg navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-menu collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#"><img src="/Front/img/logo-dark.png" alt=""></a>
+          <a class="navbar-brand" href="/Front/html/index.html"><img src="/Front/img/logo-dark.png" alt=""></a>
           <ul class="navbar-all navbar-nav mr-auto">
             <li class="nav-item">
               <a class="navbar-link nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -47,10 +53,10 @@
                   Discover
                 </a>
                 <ul>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">Pricing Plan</a></li>
-                  <li><a href="#">Latests Blogs</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#team">Our Team</a></li>
+                    <li><a href="index.html#price">Pricing Plan</a></li>
+                    <li><a href="index.html#blog">Latests Blogs</a></li>
                 </ul>
               </li>
               <li class="nav-item drop-menu">
@@ -59,9 +65,9 @@
                 </a>
                 <ul>
                   <li><a href="/Front/html/about.html">About Us</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">FAQ’s</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="/Front/html/features.html" target="_blank">Features</a></li>
+                  <li><a href="/Front/html/faq.html" target="_blank">FAQ’s</a></li>
+                  <li><a href="#" target="_blank">Blog</a></li>
 
                 </ul>
               </li>
@@ -86,7 +92,7 @@
                         </div>
                         <div class="col-lg-12">
                             <ul class="faq-home">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.html" target="_blank">Home</a></li>
                                 <i class="fas fa-chevron-right"></i>
                                 <li class="active">FAQ's</li>
                             </ul>
@@ -110,57 +116,176 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-12 col-sm-12">
-						<div class="faq" id="accordion">
-							<div class="card">
-								<div class="card-header" id="faqHeading-1">
-									<div class="mb-0">
-										<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
-											How does Jirono Internet work?
-										</h5>
-									</div>
-								</div>
-								<div id="faqCollapse-1" class="collapse show" aria-labelledby="faqHeading-1" data-parent="#accordion">
-									<div class="card-body">
-										<p>Aliquam erat odio, fringilla at porta a, vehicula ultricies est. Aliquam maximus turpis in dignissim pellentesque. Ut dolor quam, aliquam eget bibendum nec, luctus non metus. Morbi convallis.</p>
-										<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed finibus faucibus congue.</p>
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" id="faqHeading-2">
-									<div class="mb-0">
-										<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
-											How fast is the Jirono Internet service?
-										</h5>
-									</div>
-								</div>
-								<div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
-									<div class="card-body">
-										<p>Aliquam erat odio, fringilla at porta a, vehicula ultricies est. Aliquam maximus turpis in dignissim pellentesque. Ut dolor quam, aliquam eget bibendum nec, luctus non metus. Morbi convallis.</p>
-										<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed finibus faucibus congue.</p>
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" id="faqHeading-3">
-									<div class="mb-0">
-										<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
-											Can I keep my home phone number?
-										</h5>
-									</div>
-								</div>
-								<div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
-									<div class="card-body">
-										<p>Aliquam erat odio, fringilla at porta a, vehicula ultricies est. Aliquam maximus turpis in dignissim pellentesque. Ut dolor quam, aliquam eget bibendum nec, luctus non metus. Morbi convallis.</p>
-										<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed finibus faucibus congue.</p>
-									</div>
-								</div>
-							</div>
-						</div>
+						<div class="accordion">
+                            <div class="accordion__header is-active">
+                                <h2>How does Jirono Internet work?</h2>
+                            </div>
+                            <div class="accordion__body is-active">
+                                <p>Aliquam erat odio, fringilla at porta a, vehicula ultricies est. Aliquam maximus turpis in dignissim pellentesque. Ut dolor quam, aliquam eget bibendum nec, luctus non metus. Morbi convallis.</p>
+                                <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed finibus faucibus congue.</p>
+                            </div>
+                            <div class="accordion__header">
+                                <h2>How fast is the Jirono Internet service?</h2>
+                            </div>
+                            <div class="accordion__body">
+                                <p>Aliquam erat odio, fringilla at porta a, vehicula ultricies est. Aliquam maximus turpis in dignissim pellentesque. Ut dolor quam, aliquam eget bibendum nec, luctus non metus. Morbi convallis.</p>
+                                <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed finibus faucibus congue.</p>
+                            </div>
+                            <div class="accordion__header">
+                                <h2>Can I keep my home phone number?</h2>
+                            </div>
+                            <div class="accordion__body">
+                                <p>Aliquam erat odio, fringilla at porta a, vehicula ultricies est. Aliquam maximus turpis in dignissim pellentesque. Ut dolor quam, aliquam eget bibendum nec, luctus non metus. Morbi convallis.</p>
+                                <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed finibus faucibus congue.</p>
+                            </div>
+                        </div>
 					</div>
 				</div>
 			</div>
         </section>
+        <section id="features" class="cloud-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                  <div class="content">
+                    <h2>Cloud Services</h2>
+                    <p>Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi consequat arcu augue, molestie faucibus metus ullamcorper vel.</p>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="cloud-button active">
+                        <a href="#">
+                          <i class="fa fa-angle-right"></i>
+                          <span>NearCloud</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="cloud-button">
+                        <a href="#">
+                          <i class="fa fa-angle-right"></i>
+                          <span>Office Cloud</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="cloud-button">
+                        <a href="#">
+                          <i class="fa fa-angle-right"></i>
+                          <span>Backup Systems</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="cloud-button">
+                        <a href="#">
+                          <i class="fa fa-angle-right"></i>
+                          <span>Hybrid Cloud</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="cloud-button">
+                        <a href="#">
+                          <i class="fa fa-angle-right"></i>
+                          <span>API Cloud</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="cloud-button">
+                        <a href="#">
+                          <i class="fa fa-angle-right"></i>
+                          <span>SDK Cloud</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="cloud-button">
+                        <a href="#">
+                          <i class="fa fa-angle-right"></i>
+                          <span>Web Services</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="cloud-button">
+                        <a href="#">
+                          <i class="fa fa-angle-right"></i>
+                          <span>Cloud Hosting</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div data-aos="fade-right" data-aos-duration="1000"  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine" class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="png">
+                    <img src="/Front/img/dark-1.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                  <div class="footer-logo">
+                    <img src="/Front/img/logo-white.png" class="logo" alt="">
+                  </div>
+                  <div class="footer-text">Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                  <div class="footer-content">
+                    <h5>Helpful Links</h5>
+                    <ul>
+                      <li><a href="#"><i class="fa fa-angle-right"></i><span>About Us</span></a></li>
+                      <li><a href="#"><i class="fa fa-angle-right"></i><span>Features</span></a></li>
+                      <li><a href="#"><i class="fa fa-angle-right"></i><span>FAQ’s</span></a></li>
+                      <li><a href="#"><i class="fa fa-angle-right"></i><span>Blog</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                  <div class="footer-content">
+                    <h5>Support</h5>
+                    <ul>
+                      <li><a href="#"><i class="fa fa-angle-right"></i><span>Privacy Policy</span></a></li>
+                      <li><a href="#"><i class="fa fa-angle-right"></i><span>Terms of Use</span></a></li>
+                      <li><a href="#"><i class="fa fa-angle-right"></i><span>Support Center</span></a></li>
+                      <li><a href="#"><i class="fa fa-angle-right"></i><span>Contact</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                  <div class="footer-content">
+                    <h5>Contact Us</h5>
+                    <p>455 West Orchard Street<br>Kings Mountain, NC 28086</p>
+                      <p>Phone: (272) 211-7370</p>
+                      <p><span>E-Mail:</span><a href="#">support@yourbrand.com</a></p>
+                      <div class="social">
+                        <ul>
+                          <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                          <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                          <li><a href="#"><i class="fa fa-github-square"></i></a></li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="copyright">
+                    <p>© 2019 Jirono. All Rights Reserved.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/6579f4e748.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>

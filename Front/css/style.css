@@ -1,5 +1,6 @@
 body{
     font-family: 'Nunito', sans-serif !important;
+    border: 1px solid red;
 }
 .navbar{
     padding: 0.5rem 4.9rem !important;
@@ -8,6 +9,14 @@ body{
     width: 100%;
     top:0;
     transition: all 0.3s ease 0s;
+}
+.navbar-faq{
+    position: fixed !important;
+    padding: 0.5rem 4.9rem !important;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
 }
 .navbar-nav{
     margin-left: 60px;
@@ -39,10 +48,48 @@ body{
     transform: translateY(-2em);
     z-index: -1;
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    background-color: white;
+    padding: 0;
 }
 
 .drop-menu ul li{
     list-style: none;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    display: block;
+    background: #fff;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    border-bottom: 1px solid #f5f5f5;
+    transition: .3s;
+}
+.drop-menu ul li:hover{
+    background: #f5f5f5;
+    padding-left: 25px;
+}
+.drop-menu ul li{
+    color: #3B566E;
+    position: relative;
+}
+.drop-menu ul li a{
+    text-decoration: none;
+    display: block;
+    color: #3B566E;
+}
+.drop-menu ul li::before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: #1A153A;
+    transition: .3s;
+}
+.drop-menu ul li:hover::before{
+    width: 3px;
 }
 .drop-menu:hover ul{
     visibility: visible;
@@ -97,7 +144,7 @@ body{
     background: #fff url(/Front/img/header-bg.svg);
     background-position: top left;
     background-repeat: no-repeat;
-    padding-top: 150px;
+    padding: 150px 0 100px;
 }
 .welcome-info{
     padding-top: 70px;
@@ -205,7 +252,7 @@ body{
     font-size: 18px;
 }
 .services{
-    padding: 6rem 0;
+    padding-bottom: 3rem;
 }
 .services-item{
     padding: 30px;
@@ -243,18 +290,18 @@ body{
 }
 .cloud-section{
     background-color: #F7FAFD;
-    padding: 6rem 0;
+    padding-bottom: 3rem;
 }
 .cloud-section2{
     padding: 6rem 0;
 }
 .png{
     margin-top: 80px;
-    /* margin-left: 48px; */
+    text-align: center;
 }
 .png-2{
     margin-top: 8rem;
-    margin-right: 85px;
+    text-align: center;
 }
 #features .content{
     margin-top: 2rem;
@@ -345,27 +392,6 @@ body{
 .cloud-button:hover a span{
     margin-left: 75px;
 }
-/* .parallax-content{
-    background-image: url(img/parallax.jpg);
-    min-height: 315px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: fixed;
-    width: 1263px;
-    height: 315px;
-    visibility: visible;
-    transform: translate3d(0px, -23.0001px, 0px);
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: 999;
-    transform: translate3d(0px, 94.9999px, 0px);
-} */
-/* .parallax{
-    min-height: 315px;
-    overflow: hidden;
-    position: relative;
-} */
 .parallax::before{
     content: '';
     position: absolute;
@@ -405,7 +431,7 @@ body{
     letter-spacing: 1.72px;
     margin-bottom: 15px;
     color: #fff;
-    margin-top: 70px;
+    margin-top: 10px;
     transition: all 0.3s ease 0s;
 }
 .counter-item strong::before{
@@ -555,11 +581,11 @@ body{
     background-color: #F7FAFD;
 }
 .price-item{
-    width: 350px;
-    height: 646px;
     background-color: white;
     text-align: center;
     box-shadow: 0 2px 48px 0 rgb(0 0 0 / 6%);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 .price-plan{
     height: 130px;
@@ -731,6 +757,10 @@ body{
     transition: 0.3s;
     cursor: pointer;
 }
+.blog-item{
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
 .blog-img{
     position: relative;
     overflow: hidden;
@@ -739,15 +769,11 @@ body{
     margin-bottom: 25px;
 }
 .blog-img .blog-img-1{
-    width: 351px;
-    height: 340px;
     position: absolute;
     left: 0;
     top: -70px;
 }
 .blog-img .blog-img-2, .blog-img .blog-img-3{
-    width: 351px;
-    height: 233px;
     position: absolute;
     left: 0;
     top: -15px;
@@ -917,7 +943,10 @@ footer{
 
 .about-section{
     background-color: #F7FAFD;
-    padding: 6rem 0;
+    padding-bottom: 3rem;
+}
+.about-section-2{
+    padding: 5rem 0;
 }
 .about-img{
     width: 70%;
@@ -925,6 +954,7 @@ footer{
     overflow: hidden;
     position: relative;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 .about-img:hover.about-img img{
     transform: scale(1.1);
@@ -1069,7 +1099,7 @@ footer{
     justify-content: center;
 }
 .question{
-    background-color: #F7FAFD;
+    padding: 5rem 0;
 }
 .faq{
     background: #FFFFFF;
@@ -1077,21 +1107,89 @@ footer{
     border-radius: 4px;
     margin-bottom: 30px;
 }
+.faq-header h2{
+    font-weight: 400;
+    font-size: 30px;
+    color: #3B566E;
+    letter-spacing: 1.88px;
+    margin-bottom: 20px;
+}
+.faq-header p{
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .88px;
+    line-height: 28px;
+    color: #6F8BA4;
+}
+.faq-header a{
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 5px;
+    background: #1A153A;
+    margin: 40px 0;
+    font-weight: 700;
+    font-size: 12px;
+    color: white !important;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+.accordion{
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.accordion__header {
+    border-bottom: 1px solid #F7F6FF;
+	padding: 1rem 1.8rem;
+	margin-top: 2px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+    transition: .5s;
+}
+.accordion__header:hover{
+    background: #F7F6FF;
+    padding-left: 2.5rem;
+}
+.accordion__header > * {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 16px;
+}
+.accordion__header.is-active {
+	color: black;
+}
 
-.service-1{
-    animation-duration: 2s;
-}
-.service-2{
-    animation-duration: 3s;
-}
-.service-3{
-    animation-duration: 4s;
-}
-.service-4{
-    animation-duration: 5s;
+.accordion__body {
+	display: none;
+	padding: 2rem;
+	border-bottom: 1px solid #F7F6FF;
+	border-top: 0;
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .88px;
+    line-height: 28px;
+    color: #6F8BA4;
 }
 
+.accordion__body.is-active {
+	display: block;
+}
 
+.about-us{
+    padding-top: 4rem;
+    background-color: #F7FAFD;
+}
 #preloader {
   overflow: hidden;
   background-image: linear-gradient(135deg, #1A153A 0%, #565178 100%);
@@ -1173,5 +1271,8 @@ footer{
     .images-gen{
         display: flex;
         justify-content: center;
+        width: 85%;
     }
+
 }
+
